@@ -6,11 +6,6 @@ import allure
 
 class TestCreateCourier:
 
-    @allure.title('Курьера можно создать')
-    def test_create_courier(self):
-        courier_data = register_new_courier_and_return_login_password()[0]
-        assert courier_data
-
     @allure.title('Нельзя создать двух одинаковых курьеров')
     def test_create_duplicate_courier(self):
         courier_data = register_new_courier_and_return_login_password()[0]
